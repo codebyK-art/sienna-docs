@@ -41,7 +41,7 @@ h3 { font-size: 1.2rem; margin: 1.75rem 0 0.5rem; }
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(6px);
 }
-.brand { font-family: 'Fraunces', Georgia, serif; font-size: 1.75rem; line-height: 1; color: var(--deep); text-decoration: none; letter-spacing: -0.01em; }
+.brand img { display: block; height: 40px; width: auto; }
 .tag { color: var(--muted); font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase; }
 .top-support {
   margin-inline-start: auto; padding: 0.55rem 1.1rem; border-radius: 999px;
