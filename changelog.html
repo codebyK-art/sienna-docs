@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Release notes · Sienna theme documentation</title>
+<meta name="description" content="What changed in each version of the Sienna Shopify theme.">
+<link rel="icon" href="assets/sienna-favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap">
+<link rel="stylesheet" href="assets/docs.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <a class="brand" href="index.html"><img src="assets/sienna-logo.png" alt="Sienna" width="150" height="40"></a>
+  <span class="tag">Theme documentation</span>
+  <a class="top-support" href="support.html">Contact support</a>
+</header>
+<div class="shell">
+  <nav class="side" aria-label="Documentation">
+    <ul>
+      <li><a href="index.html">Overview</a></li>
+      <li><a href="getting-started.html">Getting started</a></li>
+      <li><a href="theme-settings.html">Theme settings</a></li>
+      <li><a href="header-footer.html">Header and footer</a></li>
+      <li><a href="sections.html">Sections</a></li>
+      <li><a href="product-page.html">Product page</a></li>
+      <li><a href="collections-search.html">Collections and search</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="languages-markets.html">Languages and markets</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="changelog.html" aria-current="page">Release notes</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+  </nav>
+  <main id="main" class="content">
+<h1>Release notes</h1>
+<p class="lead">To update, open <strong>Online Store › Themes</strong> and follow the update notice on your Sienna theme.</p>
+<h2>Version 1.0.0</h2>
+<p>First release candidate for the Shopify Theme Store.</p>
+<ul>
+<li><strong>Design:</strong> new Porcelain, Blush, Rose, Eucalyptus and Sage palette (every pair checked for WCAG AA contrast). Soft rounded image frames by default; the hero keeps its arch through a new slideshow &quot;Image shape&quot; setting. Paper texture is off by default.</li>
+<li><strong>Stories:</strong> the row fills the page width on desktop with larger bubbles.</li>
+<li><strong>Fixes:</strong>
+<ul>
+<li>The page no longer stops scrolling when Shopify adds its own dialogs, such as Shop sign-in. Scroll lock now applies only to the theme&#x27;s modal drawers.</li>
+<li>The search modal closes on Escape.</li>
+<li>Jumping down a page (anchor links, scroll restore) no longer leaves sections invisible.</li>
+<li>No layout shift on the mobile collection page (CLS 0.25 → 0).</li>
+<li>The desktop dropdown and mega menu stay open while the pointer moves from the link down to the panel (hover bridge plus a short close delay).</li>
+<li>No sideways scrolling on iPhone Safari. Screen-reader text inside swipe rows no longer widens the page.</li>
+<li>Cart note autosave and the back/forward cart refresh no longer throw when offline.</li>
+<li>No white gap above the announcement bar (skip link).</li>
+<li>Cart count updates straight away.</li>
+<li>Mobile header and footer layout fixed.</li>
+</ul></li>
+<li><strong>Demo content:</strong> Sienna preset with logo, favicon, 16 products, 14 collections, journal articles and an About page.</li>
+</ul>
+<h2>Version 0.1.0</h2>
+<p>First development build.</p>
+<ul>
+<li>Foundation: settings, five color schemes, typography (Fraunces and Figtree), arch image frames, right-to-left support.</li>
+<li>Header with mega menu, predictive search, country and language selectors, account component. Announcement bar. Footer with newsletter, payment icons and Follow on Shop. Mobile bottom navigation.</li>
+<li>Product page built from blocks, with variant picker and swatches, media gallery (video, 3D/AR, zoom), subscriptions, gift card recipients, pickup availability, Shop Pay Installments, complementary and related products, and sticky add to cart.</li>
+<li>Collection and search pages with filtering, sorting and pagination. Cart drawer and cart page with discounts, notes and subscriptions. Quick add.</li>
+<li>Blog, article with comments, page, contact, 404, password and gift card templates.</li>
+<li>Home and editorial sections: slideshow, stories, collection list, featured collection, collection tabs, image with text, routine builder, before/after, ingredients, video, video reviews, icons with text, testimonials, sale countdown, campaign banner, shop the look, blog posts, email signup, logo list, FAQ, featured product, image banner, rich text, custom Liquid, apps.</li>
+<li>Removed dark mode.</li>
+<li>Audit fixes against the Theme Store requirements and theme docs:
+<ul>
+<li><strong>Accessibility:</strong> contrast-safe muted text and input borders, 44px touch targets, filter drawer as a native dialog, valid predictive search listbox, pause buttons for every auto-rotating element, focus moves to form messages.</li>
+<li><strong>Product page:</strong> gallery previous/next buttons, quick add rendered in its own section, SKU and vendor blocks, subscription group names and per-delivery prices, plan kept when the variant changes, gift card recipient rules.</li>
+<li><strong>Cart:</strong> unit price each, subtotal → discounts → estimated total, Shop Pay Installments, pre-order &quot;due today&quot;, app blocks.</li>
+<li><strong>Performance:</strong> one high-priority image per page, critical CSS in the head, per-section scripts, reveal animation only below the fold.</li>
+<li><strong>Theme editor:</strong> selected blocks stay visible, inspector support, listener cleanup, content sections kept out of header and footer groups, `&quot;tag&quot;: null` on theme blocks.</li>
+<li><strong>Safety:</strong> escaped search terms and line-item properties, neutral default copy (no claims a store may not be able to make).</li>
+</ul></li>
+</ul>
+
+    <footer class="foot">
+      <p>Sienna is a Shopify theme by codebyK. Can't find an answer? <a href="support.html">Contact support</a>.</p>
+    </footer>
+  </main>
+</div>
+</body>
+</html>
