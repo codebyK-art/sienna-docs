@@ -45,7 +45,7 @@
 </div>
 
 <form class="contact" action="https://formsubmit.co/vividgarage@outlook.com" method="POST" enctype="multipart/form-data">
-  <input type="hidden" name="_subject" value="Sienna theme support request">
+  <input type="hidden" name="_subject" value="Sienna support request" id="subject">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_next" value="https://codebyk-art.github.io/sienna-docs/thanks.html">
   <input type="hidden" name="_autoresponse" value="Thanks for contacting Sienna theme support. We've received your message and will reply within 2 business days.">
@@ -61,7 +61,7 @@
     <input type="text" name="store_url" required>
   </label>
   <label>Topic
-    <select name="topic" required>
+    <select name="topic" required onchange="document.getElementById('subject').value = 'Sienna support: ' + this.value">
       <option value="">Choose a topic</option>
       <option>Setting up the theme</option>
       <option>Something isn't working</option>
